@@ -1,0 +1,144 @@
+/*FONTS*/
+/*Fonts used for reference
+"font-family: 'Roboto Slab', serif;" = for headings
+"font-family: 'Roboto', sans-serif;" = for paragraphs
+*/
+
+h1 {
+ font-family: 'Roboto Slab', serif;
+ font-size: 26pt;
+ font-style: normal;
+}
+
+h2 {
+ font-family: 'Roboto Slab', serif;
+ font-size: 16pt
+ font-style: normal;
+}
+
+h3 {
+ font-family: 'Roboto Slab', serif;
+ font-size: 12pt
+ font-style: normal;
+}
+
+.p1 {
+ font-family: 'Roboto', sans-serif;
+}
+/*END of FONTS*/
+
+/*BODY*/
+body {
+ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background_newspapers.jpg');
+}
+/*the two periods in the "url()" tells the browser to go up one level in the folder hierarchy from the folder in which this document is found*/
+
+/*This is for the "div" that encapsulates the HTML content within the <body>*/
+#wrapper {
+ width: 70%;
+ margin: auto;
+ background: hsla(0, 0%, 100%, 70%);
+ border: 10px;
+ border-color: #333;
+ border-style: solid;
+}
+/*END of BODY*/
+
+/*HEADER*/
+#above-nav {
+ display:grid;
+ grid-template-columns: 1fr 3fr 1fr;
+ align-items: center;
+}
+
+#hero-text {
+ font-family: 'Roboto Slab', serif;
+ font-size: 17pt
+ /*position:*/
+}
+
+#intro-links {
+ font-family: 'Roboto Slab', serif;
+}
+/*END of HEADER*/
+
+/*NAVIGATION BAR*/
+/*The following "nav ul" CSS is applied to the entire unordered list.*/
+nav ul {
+ font-family: 'Roboto', sans-serif;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333;
+}
+
+/*The following applies to individual list items in the nav ul, the "a" element signifying that each item is a link*/
+nav li a {
+ color: white;
+ display: block;
+ float: left;
+ padding: 14px 16px;
+ text-align: center;
+ text-decoration: none;
+}
+
+/*This changes the colour of a link in the navigation bar when the curser hovers over it*/
+nav li a:hover {
+ background-color: #111;
+}
+
+/*Sets the link in the navigation bar for the current page bold*/
+.current-page {
+ font-weight: bold;
+}
+/*END of NAVIGATION BAR*/
+
+/*MAIN*/
+#intro-p {
+ font-family: 'Roboto', sans-serif;
+ float: left;
+}
+
+.video-container {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+/*END of MAIN*/
+
+/*FOOTER*/
+#site-footer {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1.5fr;
+ border-top: 10px;
+ border-style: solid;
+ border-color: #333;
+}
+
+.footer-lists {
+ list-style-type:disc;
+ float: left;
+ display: grid;
+ font-family: 'Roboto', sans-serif;
+}
+
+/*Removes the first bullet point for lists in the footer to allow list headers to be aligned correctly*/
+.footer-lists li:first-child {list-style-type:none;}
+
+#social-links {
+ float: left;
+ display: flex;
+ list-style-type: none;
+}
+
+#footer-other {
+ float: left;
+ list-style-type: none;
+}
+
+#copyright-text {
+ font-family: 'Roboto Slab', serif;
+ font-size: 10pt;
+ colour: black;
+}
+/*END of FOOTER*/
